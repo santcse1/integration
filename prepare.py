@@ -6,8 +6,7 @@ import subprocess
 
 work_dir = os.path.realpath(os.curdir)
 
-f = open('config.txt', 'r')
-config = json.load(f.read())
+config = json.load(open('config.txt', 'r'))
 
 for pr in config:
     os.chdir(work_dir)
