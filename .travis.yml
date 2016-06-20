@@ -1,0 +1,5 @@
+script:
+  - ./prepare.py
+  - cat repo1/dummy
+  - cat repo2/dummy
+  - test $((`cat repo1/dummy` + `cat repo2/dummy`)) -gt 10
