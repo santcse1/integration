@@ -1,3 +1,7 @@
+addons:
+  apt:
+    packages:
+      - python3
 script:
   - ./prepare.py
   - cat repo1/dummy
